@@ -1,0 +1,7 @@
+{
+  "cifar-resnet": {
+    "name": "ResNet-18 from scratch",
+    "dataset": "cifar10",
+    "checkpoint": "runs/cifar-resnet/best.pt"
+  }
+}

@@ -1,0 +1,10 @@
+# Reproducibility baseline matched to the author's existing working environment.
+# Install the appropriate CPU/CUDA PyTorch wheels first; see README.
+torch==2.5.1
+torchvision==0.20.1
+timm==0.9.16
+numpy>=1.26,<2
+Pillow>=10,<12
+Flask>=3.0,<4
+matplotlib>=3.7,<4
+scikit-learn>=1.2,<2
