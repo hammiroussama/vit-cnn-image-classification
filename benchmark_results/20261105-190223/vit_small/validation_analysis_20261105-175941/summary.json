@@ -1,0 +1,10 @@
+{
+  "dataset": "cifar10",
+  "split": "saved validation subset of training data",
+  "checkpoint": "runs/cifar10-vit-small-pretrained-20261105-163112/best.pt",
+  "device": "cpu",
+  "samples": 5000,
+  "accuracy_percent": 99.2,
+  "macro_f1": 0.9920037612057984,
+  "note": "Exploratory validation results, not test results. Softmax scores are not calibrated confidence."
+}

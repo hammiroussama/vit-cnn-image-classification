@@ -1,0 +1,10 @@
+{
+  "dataset": "cifar10",
+  "split": "saved validation subset of training data",
+  "checkpoint": "runs/cifar10-cnn-scratch-20261103-201525/best.pt",
+  "device": "cpu",
+  "samples": 5000,
+  "accuracy_percent": 94.89999999999999,
+  "macro_f1": 0.9489592666389537,
+  "note": "Exploratory validation results, not test results. Softmax scores are not calibrated confidence."
+}

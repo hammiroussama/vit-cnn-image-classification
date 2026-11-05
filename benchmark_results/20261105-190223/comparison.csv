@@ -1,0 +1,4 @@
+model,run,epochs,best_epoch,validation_accuracy,test_accuracy,test_macro_f1
+ResNet-18 - from scratch,cifar10-cnn-scratch-20261103-201525,50,46,94.89999999999999,93.93,0.9392612145319476
+Custom ViT - from scratch,cifar10-vit-scratch-20261103-205137,50,46,82.56,82.08,0.8195504242393312
+"ViT-Small - pretrained, fine-tuned",cifar10-vit-small-pretrained-20261105-163112,44,29,99.2,98.7,0.987005069509592

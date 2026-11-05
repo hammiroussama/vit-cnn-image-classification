@@ -1,0 +1,8 @@
+{
+  "torch": "2.5.1+cu121",
+  "torchvision": "0.20.1+cu121",
+  "timm": "0.9.16",
+  "device": "cuda",
+  "hardware": "NVIDIA GeForce RTX 4090",
+  "parameters": 21669514
+}
