@@ -8,3 +8,4 @@ Pillow>=10,<12
 Flask>=3.0,<4
 matplotlib>=3.7,<4
 scikit-learn>=1.2,<2
+huggingface_hub==0.25.2

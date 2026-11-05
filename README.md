@@ -2,7 +2,7 @@
 
 An image classification project by **Hammir Oussama**, comparing a custom Vision Transformer with ResNet-18 and pretrained ViTs on **CIFAR-10** and **Imagenette**. The project includes training, held-out evaluation, saved experiment settings, and a local Flask prediction demo.
 
-**Status:** the original thesis code is being consolidated into a reproducible benchmark. Corrected full-dataset results are pending server training. Historical scores from the earlier implementation are not advertised as new held-out results.
+**Status:** CIFAR-10 experiments completed. Official test accuracy: **93.93% ResNet-18**, **82.08% custom ViT**, and **98.70% pretrained ViT-Small**. See [results and limitations](docs/CIFAR10_RESULTS.md). These are single-seed results; Imagenette experiments are pending.
 
 ## Research questions
 
@@ -72,9 +72,9 @@ Evaluation records accuracy in percent, macro F1 in [0, 1], a confusion matrix a
 ## Web demo
 
 ```bash
-cp demo_models.example.json demo_models.json
-# Edit checkpoint paths to point to real checkpoints produced by this version.
-python app.py
+python export_portfolio.py
+# Requires the three completed server runs listed in docs/CIFAR10_RESULTS.md.
+MODEL_REGISTRY=demo_models.trained.json python app.py
 ```
 
 Open `http://127.0.0.1:5000`. Add entries to the registry for the models you want to compare, and run predictions with the same image. Without a registry the demo displays a clear empty state. Images are decoded in memory, not saved to disk. The app binds to localhost with debug mode off; it is a local research demo, not a production hosting setup. Softmax scores are not calibrated confidence.
@@ -98,3 +98,5 @@ Offline tests cover split isolation, partial accumulation, class metrics, checkp
 ## Attribution
 
 Project and original thesis implementation: [Hammir Oussama](https://github.com/hammiroussama). Libraries and model implementations: [PyTorch](https://pytorch.org/), [torchvision](https://github.com/pytorch/vision), [timm](https://github.com/huggingface/pytorch-image-models). Dataset sources: [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) and [Imagenette](https://github.com/fastai/imagenette). Respect the applicable dataset and pretrained-weight terms. A redistribution license for the author's code has not yet been selected.
+
+
